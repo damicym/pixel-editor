@@ -67,9 +67,6 @@ function App() {
                         <svg width="40" height="40">
                             <use href="/assets/sprite.svg#tailwind"></use>
                         </svg>
-                        <svg width="40" height="40">
-                            <use href="/assets/sprite.svg#pnpm"></use>
-                        </svg>
                         <div className='flex items-center'>
                             <svg width="40" height="40">
                                 <use href="/assets/sprite.svg#html"></use>
