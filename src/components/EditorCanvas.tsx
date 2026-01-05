@@ -223,12 +223,12 @@ function EditorCanvas({ currentColor, selectedTool }: CanvasProps) {
                 <div className='flex gap-1! items-center'>
                     <button className='cursor-pointer transition-all hover:brightness-150' onClick={handleDownload}>
                         <svg width="30" height="30" className='text-dark!'>
-                            <use href="src/assets/sprite.svg#download"></use>
+                            <use href="/assets/sprite.svg#download"></use>
                         </svg>
                     </button>
                     <button className='cursor-pointer transition-all hover:brightness-150' onClick={() => setShowModal(true)}>
                         <svg width="27" height="27" className='text-dark!'>
-                            <use href="src/assets/sprite.svg#settings"></use>
+                            <use href="/assets/sprite.svg#settings"></use>
                         </svg>
                     </button>
                     <p className='text-dark! pointer-events-none m-0!'>
@@ -256,7 +256,7 @@ function EditorCanvas({ currentColor, selectedTool }: CanvasProps) {
                         onClick={() => { if (confirm("¿Estás seguro/a de que querés reiniciar el lienzo?")) { resetGrid() } }}
                     >
                         <svg width="25" height="25" className='text-dark!'>
-                            <use href="src/assets/sprite.svg#reset"></use>
+                            <use href="/assets/sprite.svg#reset"></use>
                         </svg>
                     </button>
                 </div>

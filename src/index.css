@@ -14,7 +14,7 @@ body{
 
 @font-face {
   font-family: "SourGummy";
-  src: url("src/assets/fonts/SourGummy-Variable.woff2") format('woff2');
+  src: url("/assets/fonts/SourGummy-Variable.woff2") format('woff2');
   font-display: swap;
   font-weight: 100 900;
   font-style: normal;
@@ -22,7 +22,7 @@ body{
 
 @font-face {
   font-family: "SourGummy";
-  src: url("src/assets/fonts/SourGummy-Italic-Variable.woff2") format('woff2');
+  src: url("/assets/fonts/SourGummy-Italic-Variable.woff2") format('woff2');
   font-display: swap;
   font-weight: 100 900;
   font-style: italic;

@@ -33,7 +33,7 @@ function App() {
                 className='text-3xl! flex justify-center items-center gap-1 p-2 m-2  text-darker! font-normal! cursor-pointer rounded-md hover:bg-darker/5!'
             >
                 <svg width="30" height="30" className=" text-primary! animate-rotate-360 animate-duration-400">
-                    <use href="src/assets/sprite.svg#icon"></use>
+                    <use href="/assets/sprite.svg#icon"></use>
                 </svg>
                 Editor Pixelart
                 { showInfo ?
@@ -59,20 +59,20 @@ function App() {
                     </h2>
                     <section className='flex gap-8 justify-center items-center'>
                         <svg width="45" height="45">
-                            <use href="src/assets/sprite.svg#react"></use>
+                            <use href="/assets/sprite.svg#react"></use>
                         </svg>
                         <svg width="40" height="40">
-                            <use href="src/assets/sprite.svg#ts"></use>
+                            <use href="/assets/sprite.svg#ts"></use>
                         </svg>
                         <svg width="40" height="40">
-                            <use href="src/assets/sprite.svg#tailwind"></use>
+                            <use href="/assets/sprite.svg#tailwind"></use>
                         </svg>
                         <svg width="40" height="40">
-                            <use href="src/assets/sprite.svg#pnpm"></use>
+                            <use href="/assets/sprite.svg#pnpm"></use>
                         </svg>
                         <div className='flex items-center'>
                             <svg width="40" height="40">
-                                <use href="src/assets/sprite.svg#html"></use>
+                                <use href="/assets/sprite.svg#html"></use>
                             </svg>
                             <span className='text-lg! text-black font-mono font-bold'>CanvasAPI</span>
                         </div>
