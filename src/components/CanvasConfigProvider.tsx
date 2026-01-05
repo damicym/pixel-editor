@@ -23,7 +23,7 @@ export function useEditorConfig() {
 
 export function CanvasConfigProvider({ children }: { children: React.ReactNode }) {
     const [gridSize, setGridSize] = useState<GridSize>(() => {
-        const stored = localStorage.getItem('gridSize')
+        const stored = null // localStorage.getItem('gridSize')
         if (!stored) {
             return {
                 rows: EDITOR_DEF_CONFIG.ROWS,
@@ -42,7 +42,7 @@ export function CanvasConfigProvider({ children }: { children: React.ReactNode }
     })
 
     const [cellSize, setCellSize] = useState<number>(() => {
-        const stored = localStorage.getItem('cellSize')
+        const stored = null // localStorage.getItem('cellSize')
         return stored ? Number(stored) : EDITOR_DEF_CONFIG.CELL_SIZE
     })
 
