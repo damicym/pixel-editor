@@ -126,7 +126,7 @@ function EditorCanvas({ currentColor, selectedTool }: CanvasProps) {
         if(e.button === 1) return
         isPainting.current = true
 
-        if(selectedTool !== TOOLS.BRUSH) {
+        if(selectedTool === TOOLS.BRUSH) {
             paintMode.current = selectedTool
         } else {
             paintMode.current =
@@ -226,14 +226,14 @@ function EditorCanvas({ currentColor, selectedTool }: CanvasProps) {
                             <use href="/assets/sprite.svg#download"></use>
                         </svg>
                     </button>
-                    <button className='cursor-pointer transition-all hover:brightness-150' onClick={() => setShowModal(true)}>
+                    <button className='cursor-pointer transition-all hover:brightness-150 flex' onClick={() => setShowModal(true)}>
                         <svg width="27" height="27" className='text-dark!'>
                             <use href="/assets/sprite.svg#settings"></use>
                         </svg>
+                        <p className='text-dark! pointer-events-none m-0!'>
+                            {gridSize.rows} x {gridSize.cols} ({gridSize.rows * cellSize}px x {gridSize.cols * cellSize}px)
+                        </p>
                     </button>
-                    <p className='text-dark! pointer-events-none m-0!'>
-                        {gridSize.rows} x {gridSize.cols} ({gridSize.rows * cellSize}px x {gridSize.cols * cellSize}px)
-                    </p>
                 </div>
                 <div className='flex gap-1! items-center'>
                     <button 

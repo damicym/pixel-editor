@@ -56,6 +56,8 @@ function ModalBootstrap({ show, setShow, applyModalChanges }: ModalProps) {
                                 <input 
                                     name='grid-rows' 
                                     type='number' 
+                                    min='6'
+                                    max='20'
                                     value={rowsLocal}
                                     onChange={e => setRowsLocal(Number(e.target.value))}
                                     className='pl-3 w-14 h-6 text-center text-primary! border rounded-md'
@@ -64,6 +66,8 @@ function ModalBootstrap({ show, setShow, applyModalChanges }: ModalProps) {
                                 <input 
                                     name='grid-cols' 
                                     type='number' 
+                                    min='6'
+                                    max='20'
                                     value={colsLocal}
                                     onChange={e => setColsLocal(Number(e.target.value))}
                                     className='pl-3 w-14 h-6 text-center text-primary! border rounded-md'
@@ -76,6 +80,8 @@ function ModalBootstrap({ show, setShow, applyModalChanges }: ModalProps) {
                                 <input 
                                     name='cell-size' 
                                     type='number' 
+                                    min='20'
+                                    max='100'
                                     value={cellSizeLocal}
                                     onChange={e => setCellSizeLocal(Number(e.target.value))}
                                     className='pl-3 w-14 h-6 text-center text-primary! border rounded-md'
@@ -106,7 +112,7 @@ function ModalBootstrap({ show, setShow, applyModalChanges }: ModalProps) {
                             })
                         }}
                     >
-                        Restablecer
+                        Restablecer predeterminados
                     </Button>
                     <Button 
                         variant="primary" 
